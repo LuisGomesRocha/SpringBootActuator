@@ -1,0 +1,2 @@
+# SpringBootActuator
+Imaginando que as API's criadas até agora utilizando Spring Boot estão sendo executadas em um ambiente gerenciado e capaz de monitorar a saúde de API's, como podemos prepará-las para fornecerem as informações necessárias para que esse mecanismo de monitoramento funcione corretamente?  Como o ambiente solicita a informação da saúde da aplicação para a mesma? Seu e-mail será registrado quando você enviar este formulário.
