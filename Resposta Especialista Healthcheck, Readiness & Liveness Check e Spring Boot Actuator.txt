@@ -1,0 +1,48 @@
+Healthcheck, Readiness & Liveness Check e Spring Boot Actuator
+
+
+
+Cenário:
+
+Imaginando que as API's criadas até agora utilizando Spring Boot estão sendo executadas em um ambiente gerenciado e capaz de monitorar a saúde de API's, como podemos prepará-las para fornecerem as informações necessárias para que esse mecanismo de monitoramento funcione corretamente?
+
+
+Como o ambiente solicita a informação da saúde da API's para a mesma?
+
+
+
+
+
+
+O que seria bom ver nessa resposta?
+
+
+
+Peso 8: Configuração do Spring Boot Actuator na API
+Peso 2: Utilização do endpoint GET /actuator/health
+
+
+Resposta do Especialista:
+
+Objetivo de aprendizado: Configurar o Spring Boot Actuator na API para a mesma passar a fornecer informações de saúde da API
+Motivo da escolha: O módulo Spring Boot Actuator já fornece uma série de funcionalidades para o monitoramento de saúde da API, auditoria e coleta de métricas.
+Adiciono a dependência do Spring Boot Actuator no arquivo pom.xml do projeto:
+<dependencies>
+
+    <dependency>
+
+        <groupId>org.springframework.boot</groupId>
+
+        <artifactId>spring-boot-starter-actuator</artifactId>
+
+    </dependency>
+
+</dependencies>
+
+
+Uma vez adicionado, uma série de endpoints responsáveis por fornecer informações sobre a API passam a ser disponibilizados.
+
+
+Para obter informações sobre a saúde da API basta realizar uma requisição com o método GET para o endpoint /actuator/health que passa a ser disponibilizado na após a inclusão da nova dependência.
+
+
